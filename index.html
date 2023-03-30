@@ -30,18 +30,74 @@
 </head>
 <body>
     <!-- Banner -->
-    <header>
-
+    <header class="fixed-top">
+        <nav class="navbar navbar-expand-lg bg-light border">
+            <div class="container-fluid container-xl container-xxl border bg-white d-flex justify-content-between py-1">
+                <div>
+                    <a class="navbar-brand d-md-none" href="#">
+                        <img src="./Risorse/img/mobile-logo.png" alt="logo-small-boolean" width="50" class="img-fluid">
+                    </a>
+                </div>
+                <a class="navbar-brand d-none d-md-block" href="#">
+                    <img src="./Risorse/img/logo.svg" alt="logo-boolean">
+                </a>
+                <form class="flex-grow-1 me-2" role="search">
+                    <input type="search" class="form-control" placeholder="Prova a cercare: Lezioni di Laravel" aria-label="Search">
+                </form>
+                <!-- <form class="me-2 flex-grow-1" role="search">
+                    <button type="input" class="btn btn-outline-secondary w-100 text-start" aria-label="Search">
+                        <span><i class="fa-solid fa-magnifying-glass"></i></span>
+                        <span> Prova a cercare: Lezioni di Laravel</span>
+                    </button>
+                </form> -->
+                <div class="collapse navbar-collapse flex-grow-0">
+                    <ul class="navbar-nav list-group-horizontal gx-2">
+                        <li class="nav-item px-1">
+                            <a class="nav-link" href="#">
+                                <i class="fa-solid fa-list-ul"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item px-1">
+                            <a class="nav-link" href="#">
+                                <i class="fa-solid fa-circle-question"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item px-1">
+                            <a class="nav-link" href="#">
+                                <i class="fa-solid fa-ellipsis-vertical"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <a class="nav-link dropdown-toggle px-1" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="fa-solid fa-bell"></i>
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-end dropdown-menu-dark">
+                        <li><a class="dropdown-item" href="#">Profilo</a></li>
+                        <li><a class="dropdown-item" href="#">Fatturazione</a></li>
+                        <li><a class="dropdown-item" href="#">Logout</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
     </header>
     <!-- Main & Side Menu -->
-    <div>
+    <div class="border w-100 d-flex" id="main-SideContents">
         <!-- Side Menu Nav -->
-        <aside>
-
+        <aside id="asideMobile" class="border h-100 d-md-none text-white">
+            <p>ABC</p>
+            <p>ABC</p>
+            <p>ABC</p>
+        </aside>
+        <aside id="asideOtherDev" class="border h-100 d-none d-md-block text-white">
+            <p>ABC</p>
+            <p>ABC</p>
+            <p>ABC</p>
         </aside>
         <!-- Main Contents -->
-        <main>
-
+        <main class="border flex-grow-1 h-100">
+            ABC
         </main>
     </div>
 </body>

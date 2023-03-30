@@ -1,0 +1,36 @@
+:root {
+    --navHeight: 4.375rem;
+}
+
+/******* HEADER STYLE *******/
+header > nav {
+    height: var(--navHeight);
+}
+
+header a.nav-link > i.fa-bell {
+    color: #ff8f00;
+}
+
+/******* SIDEBAR & MAIN STYLE *******/
+#main-SideContents {
+    margin-top: var(--navHeight);
+    height: calc(100vh - var(--navHeight));
+}
+
+/* SideBar Style */
+#asideMobile {
+    width: 70px;
+}
+
+#asideOtherDev {
+    width: 150px;
+}
+
+aside {
+    background-image: url(../img/sidebar-bg.png);
+    background-color: #051E34;
+}
+
+/* Main Style */
+
+
