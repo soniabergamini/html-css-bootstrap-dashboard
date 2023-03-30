@@ -32,13 +32,13 @@
     <!-- Banner -->
     <header class="fixed-top">
         <nav class="navbar navbar-expand-lg bg-light border">
-            <div class="container-fluid container-xl container-xxl border bg-white d-flex justify-content-between py-1">
+            <div class="container-xxl border bg-white d-flex justify-content-between py-1">
                 <div>
-                    <a class="navbar-brand d-md-none" href="#">
+                    <a class="navbar-brand d-lg-none" href="#">
                         <img src="./Risorse/img/mobile-logo.png" alt="logo-small-boolean" width="50" class="img-fluid">
                     </a>
                 </div>
-                <a class="navbar-brand d-none d-md-block" href="#">
+                <a class="navbar-brand d-none d-lg-block" href="#">
                     <img src="./Risorse/img/logo.svg" alt="logo-boolean">
                 </a>
                 <form class="flex-grow-1 me-2" role="search">
@@ -83,17 +83,39 @@
         </nav>
     </header>
     <!-- Main & Side Menu -->
-    <div class="border w-100 d-flex" id="main-SideContents">
+    <div class="border w-100 d-flex container-xxl px-0" id="main-SideContents">
         <!-- Side Menu Nav -->
-        <aside id="asideMobile" class="border h-100 d-md-none text-white">
-            <p>ABC</p>
-            <p>ABC</p>
-            <p>ABC</p>
-        </aside>
-        <aside id="asideOtherDev" class="border h-100 d-none d-md-block text-white">
-            <p>ABC</p>
-            <p>ABC</p>
-            <p>ABC</p>
+        <aside id="asideMobile" class="border h-100 text-white">
+            <nav class="border h-100 navbar navbar-expand-lg d-flex flex-column justify-content-between align-items-center">
+                <div>
+                    <ul class="navbar-nav d-flex flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#">
+                                <i class="fa-solid fa-house"></i>
+                                <span class="d-none d-lg-inline-block">Home</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#">
+                                <i class="fa-solid fa-chart-simple"></i>
+                                <span class="d-none d-lg-inline-block">Stats</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#">
+                                <i class="fa-solid fa-signal"></i>
+                                <span class="d-none d-lg-inline-block">Signals</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <a href="#" class="nav-link text-white p-2">
+                        <i class="fa-solid fa-gear"></i>
+                        <span class="d-none d-lg-inline-block">Admin</span>
+                    </a>
+                </div>
+            </nav>
         </aside>
         <!-- Main Contents -->
         <main class="border flex-grow-1 h-100">

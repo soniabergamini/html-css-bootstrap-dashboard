@@ -18,17 +18,27 @@ header a.nav-link > i.fa-bell {
 }
 
 /* SideBar Style */
-#asideMobile {
-    width: 70px;
+aside {
+    width: 4.375rem;
 }
 
-#asideOtherDev {
-    width: 150px;
+@media screen and (min-width: 992px) {
+    aside {
+        width: 9.375rem;
+    }
 }
 
 aside {
     background-image: url(../img/sidebar-bg.png);
     background-color: #051E34;
+}
+
+aside i.fa-solid {
+    width: 1.125rem;
+}
+
+aside .nav-link:hover {
+    background-color: grey;
 }
 
 /* Main Style */
