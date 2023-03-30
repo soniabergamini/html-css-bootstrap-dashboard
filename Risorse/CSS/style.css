@@ -13,7 +13,7 @@ header a.nav-link > i.fa-bell {
 
 /******* SIDEBAR & MAIN STYLE *******/
 #main-SideContents {
-    margin-top: var(--navHeight);
+    /* margin-top: var(--navHeight); */
     height: calc(100vh - var(--navHeight));
 }
 
@@ -42,5 +42,7 @@ aside .nav-link:hover {
 }
 
 /* Main Style */
-
+#infoSec {
+    background-color: #1A72E8;
+}
 

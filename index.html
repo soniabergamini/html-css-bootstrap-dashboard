@@ -30,7 +30,7 @@
 </head>
 <body>
     <!-- Banner -->
-    <header class="fixed-top">
+    <header> <!-- class="fixed-top"-->
         <nav class="navbar navbar-expand-lg bg-light border">
             <div class="container-xxl border bg-white d-flex justify-content-between py-1">
                 <div>
@@ -119,7 +119,49 @@
         </aside>
         <!-- Main Contents -->
         <main class="border flex-grow-1 h-100">
-            ABC
+            <!-- Info Section -->
+            <section id="infoSec">
+                <div class="container-fluid border">
+                    <div class="row border text-white">
+                            <div class="col-12 col-lg-4 border order-lg-3 py-2">
+                                <span>Nuovo Studente</span>
+                                <button type="button" class="btn btn-outline-light m-2" data-bs-toggle="offcanvas" data-bs-target="#OCAddStudent" aria-controls="OCAddStudent">
+                                    <i class="fa-solid fa-plus"></i>
+                                </button>
+                                <!-- Off Canvas Add Student -->
+                                <div class="offcanvas offcanvas-end" data-bs-backdrop="static" tabindex="-1" id="OCAddStudent" aria-labelledby="OCAddStudentLabel">
+                                    <div class="offcanvas-header text-dark">
+                                        <h5 class="offcanvas-title" id="OCAddStudentLabel">Inserisci un nuovo studente</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                    </div>
+                                    <div class="offcanvas-body text-dark">
+                                        <div>
+                                            Vari campi del form 
+                                        </div>
+                                        <!-- <div class="dropdown mt-3">
+                                            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                                                Dropdown button
+                                            </button>
+                                            <ul class="dropdown-menu">
+                                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                            </ul>
+                                        </div> -->
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-4 border order-lg-1 py-2">
+                                <h2>Boolean</h2>
+                                <p>etichette varie</p>
+                            </div>
+                            <div class="col-12 col-lg-4 border order-lg-2 py-2">
+                                <p>Studenti online negli ultimi 30 minuti</p>
+                                <h2>125</h2>
+                            </div>
+                    </div>
+                </div>
+            </section>
         </main>
     </div>
 </body>
