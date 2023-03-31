@@ -68,6 +68,18 @@ main {
     font-size: smaller;
 }
 
+@media screen and (min-width: 768px) {
+    .wResponsive {
+        width: 50% !important;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .wResponsive {
+        width: 25% !important;
+    }
+}
+
 #mainBoxesSec table td {
     font-size: smaller;
 }
