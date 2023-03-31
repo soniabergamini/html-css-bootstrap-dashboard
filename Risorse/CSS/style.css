@@ -46,3 +46,7 @@ aside .nav-link:hover {
     background-color: #1A72E8;
 }
 
+#mainBoxesSec table td {
+    font-size: smaller;
+}
+
