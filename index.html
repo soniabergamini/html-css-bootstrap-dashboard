@@ -20,13 +20,6 @@
         integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <!-- Style CSS -->
     <link rel="stylesheet" href="./Risorse/CSS/style.css">
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
-        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
-        integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
-        crossorigin="anonymous"></script>
     <title>Bootstrap Dashboard</title>
 </head>
 
@@ -375,33 +368,10 @@
                                     <div class="card">
                                         <!-- Graph Image -->
                                         <!-- <img src="./Risorse/img/stats.jpeg" class="card-img-top img-fluid" alt="graph-img"> -->
-                                        <!-- ************** START OF GRAPH JS ************** -->
+                                        <!-- Graph JS -->
                                         <div>
                                             <canvas id="GraphJS"></canvas>
                                         </div>
-                                        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-                                        <script>
-                                            const ctx = document.getElementById('GraphJS');
-                                            new Chart(ctx, {
-                                                type: 'bar',
-                                                data: {
-                                                    labels: ['Never', 'Every few hours', 'Every hour', 'Multiple times per hour', 'Constantly'],
-                                                    datasets: [{
-                                                        label: '% of Votes',
-                                                        data: [18, 49, 11, 13, 9],
-                                                        borderWidth: 1
-                                                    }]
-                                                },
-                                                options: {
-                                                    scales: {
-                                                        y: {
-                                                            beginAtZero: true
-                                                        }
-                                                    }
-                                                }
-                                            });
-                                        </script>
-                                        <!-- ************** END OF GRAPH JS ************** -->
                                         <div class="card-body">
                                             <h5 class="card-title">Studenti attivi</h5>
                                             <p class="card-text">Lista degli utenti attivi in piattaforma nell'ultimo mese</p>
@@ -562,6 +532,18 @@
         </form>
     </div>
     <!-- ************** END OFFCANVAS SECTION ************** -->
+    <!-- ************** START SCRIPT JS ************** -->
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+        integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
+        crossorigin="anonymous"></script>
+    <!-- CHART JS -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="./script.js"></script>
+    <!-- ************** END SCRIPT JS ************** -->
 </body>
 
 </html>
