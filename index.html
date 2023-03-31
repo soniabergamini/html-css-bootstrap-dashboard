@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -28,6 +29,7 @@
         crossorigin="anonymous"></script>
     <title>Bootstrap Dashboard</title>
 </head>
+
 <body>
     <!-- Banner -->
     <header> <!-- class="fixed-top"-->
@@ -42,7 +44,8 @@
                     <img src="./Risorse/img/logo.svg" alt="logo-boolean">
                 </a>
                 <form class="flex-grow-1 me-2" role="search">
-                    <input type="search" class="form-control" placeholder="Prova a cercare: Lezioni di Laravel" aria-label="Search">
+                    <input type="search" class="form-control" placeholder="Prova a cercare: Lezioni di Laravel"
+                        aria-label="Search">
                 </form>
                 <!-- <form class="me-2 flex-grow-1" role="search">
                     <button type="input" class="btn btn-outline-secondary w-100 text-start" aria-label="Search">
@@ -70,7 +73,8 @@
                     </ul>
                 </div>
                 <div>
-                    <a class="nav-link dropdown-toggle px-1" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <a class="nav-link dropdown-toggle px-1" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
                         <i class="fa-solid fa-bell"></i>
                     </a>
                     <ul class="dropdown-menu dropdown-menu-end dropdown-menu-dark">
@@ -86,7 +90,8 @@
     <div class="border w-100 d-flex container-xxl px-0" id="main-SideContents">
         <!-- Side Menu Nav -->
         <aside id="asideMobile" class="border h-100 text-white">
-            <nav class="border h-100 navbar navbar-expand-lg d-flex flex-column justify-content-between align-items-center">
+            <nav
+                class="border h-100 navbar navbar-expand-lg d-flex flex-column justify-content-between align-items-center">
                 <div>
                     <ul class="navbar-nav d-flex flex-column">
                         <li class="nav-item">
@@ -123,46 +128,65 @@
             <section id="infoSec">
                 <div class="container-fluid border">
                     <div class="row border text-white">
-                            <div class="col-12 col-lg-4 border order-lg-3 py-2">
-                                <span>Nuovo Studente</span>
-                                <button type="button" class="btn btn-outline-light m-2" data-bs-toggle="offcanvas" data-bs-target="#OCAddStudent" aria-controls="OCAddStudent">
-                                    <i class="fa-solid fa-plus"></i>
-                                </button>
-                                <!-- Off Canvas Add Student -->
-                                <div class="offcanvas offcanvas-end" data-bs-backdrop="static" tabindex="-1" id="OCAddStudent" aria-labelledby="OCAddStudentLabel">
-                                    <div class="offcanvas-header text-dark">
-                                        <h5 class="offcanvas-title" id="OCAddStudentLabel">Inserisci un nuovo studente</h5>
-                                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        <div class="col-12 col-lg-3 border order-lg-3 py-2">
+                            <span>Nuovo Studente</span>
+                            <button type="button" class="btn btn-outline-light m-2" data-bs-toggle="offcanvas"
+                                data-bs-target="#OCAddStudent" aria-controls="OCAddStudent">
+                                <i class="fa-solid fa-plus"></i>
+                            </button>
+                            <!-- Off Canvas Add Student -->
+                            <div class="offcanvas offcanvas-end text-start" data-bs-backdrop="static" tabindex="-1"
+                                id="OCAddStudent" aria-labelledby="OCAddStudentLabel">
+                                <div class="offcanvas-header text-dark">
+                                    <h5 class="offcanvas-title" id="OCAddStudentLabel">Inserisci un nuovo studente</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="offcanvas-body text-dark">
+                                    <div>
+                                        Vari campi del form
                                     </div>
-                                    <div class="offcanvas-body text-dark">
-                                        <div>
-                                            Vari campi del form 
-                                        </div>
-                                        <!-- <div class="dropdown mt-3">
-                                            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
-                                                Dropdown button
-                                            </button>
-                                            <ul class="dropdown-menu">
-                                                <li><a class="dropdown-item" href="#">Action</a></li>
-                                                <li><a class="dropdown-item" href="#">Another action</a></li>
-                                                <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                            </ul>
-                                        </div> -->
-                                    </div>
+                                <!-- <div class="dropdown mt-3">
+                                        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                                            Dropdown button
+                                        </button>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="#">Action</a></li>
+                                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                        </ul>
+                                    </div> -->
                                 </div>
                             </div>
-                            <div class="col-12 col-lg-4 border order-lg-1 py-2">
-                                <h2>Boolean</h2>
-                                <p>etichette varie</p>
-                            </div>
-                            <div class="col-12 col-lg-4 border order-lg-2 py-2">
-                                <p>Studenti online negli ultimi 30 minuti</p>
-                                <h2>125</h2>
-                            </div>
+                        </div>
+                        <div class="col-12 col-lg-5 border order-lg-1 py-2">
+                            <h2>Boolean</h2>
+                            <p>etichette varie</p>
+                        </div>
+                        <div class="col-12 col-lg-4 border order-lg-2 py-2">
+                            <p>Studenti online negli ultimi 30 minuti</p>
+                            <h2>125</h2>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Main Boxes Section -->
+            <section id="mainBoxesSec">
+                <div class="container-fluid border">
+                    <div class="row border">
+                        <div class="col-12 col-lg-8 border py-2">
+                            <p>1. Prossime Classi</p>
+                            <p>2. FAQ</p>
+                        </div>
+                        <div class="col-12 col-lg-4 border py-2">
+                            <p>1. To Do</p>
+                            <p>2. Graph</p>
+                        </div>
                     </div>
                 </div>
             </section>
         </main>
     </div>
 </body>
+
 </html>
