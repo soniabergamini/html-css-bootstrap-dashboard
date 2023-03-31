@@ -68,15 +68,9 @@ main {
     font-size: smaller;
 }
 
-@media screen and (min-width: 768px) {
-    .wResponsive {
-        width: 50% !important;
-    }
-}
-
 @media screen and (min-width: 992px) {
     .wResponsive {
-        width: 25% !important;
+        width: 50% !important;
     }
 }
 
@@ -84,3 +78,6 @@ main {
     font-size: smaller;
 }
 
+#OCAddStudent .menuHScroll {
+    height: 400%;
+}

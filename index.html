@@ -129,30 +129,6 @@
                                 data-bs-target="#OCAddStudent" aria-controls="OCAddStudent">
                                 <i class="fa-solid fa-plus fa-xs"></i>
                             </button>
-                            <!-- Off Canvas Add Student -->
-                            <div class="offcanvas offcanvas-end text-start w-100 wResponsive" data-bs-backdrop="static" tabindex="-1"
-                                id="OCAddStudent" aria-labelledby="OCAddStudentLabel">
-                                <div class="offcanvas-header text-dark">
-                                    <h5 class="offcanvas-title" id="OCAddStudentLabel">Inserisci un nuovo studente</h5>
-                                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
-                                        aria-label="Close"></button>
-                                </div>
-                                <div class="offcanvas-body text-dark">
-                                    <div>
-                                        Vari campi del form
-                                    </div>
-                                <!-- <div class="dropdown mt-3">
-                                        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
-                                            Dropdown button
-                                        </button>
-                                        <ul class="dropdown-menu">
-                                            <li><a class="dropdown-item" href="#">Action</a></li>
-                                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                                            <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                        </ul>
-                                    </div> -->
-                                </div>
-                            </div>
                         </div>
                         <div class="col-12 col-lg-6 order-lg-1 py-2">
                             <span class="h3">Boolean</span>
@@ -326,11 +302,11 @@
                                 </div>
                                 <div class="accordion-item">
                                     <h2 class="accordion-header" id="headingOne">
-                                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                                             Come aggiungere un nuovo studente?
                                         </button>
                                     </h2>
-                                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#FAQSec">
+                                    <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#FAQSec">
                                         <div class="accordion-body">
                                             <p>Clicca sul + in alto nella sezione blu.</p>
                                         </div>
@@ -419,6 +395,114 @@
             </section>
         </main>
     </div>
+    <!-- ************** INIZIO OFFCANVAS SECTION ************** -->
+    <div class="offcanvas offcanvas-end text-start wResponsive w-100 overflow-scroll" data-bs-backdrop="static" tabindex="-1"
+        id="OCAddStudent" aria-labelledby="OCAddStudentLabel">
+        <div class="offcanvas-header text-dark">
+            <h5 class="offcanvas-title" id="OCAddStudentLabel">Inserisci un nuovo studente</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body flex-grow-0 text-dark row py-0">
+            <div class="mb-2 col-12 col-lg-6">
+                <label for="FormName" class="form-label">Nome</label>
+                <input type="text" class="form-control" id="FormName">
+            </div>
+            <div class="mb-2 col-12 col-lg-6">
+                <label for="FormSurname" class="form-label">Cognome</label>
+                <input type="text" class="form-control" id="FormSurname">
+            </div>
+            <div class="mb-2 col-12 col-lg-6">
+                <label for="FormEmail" class="form-label">Email</label>
+                <div class="input-group">
+                    <span class="input-group-text" id="basic-addon1">@</span>
+                    <input type="email" class="form-control" id="FormEmail">
+                </div>
+            </div>
+            <div class="mb-2 col-12 col-lg-6">
+                <label for="FormPsw" class="form-label">Password</label>
+                <input type="password" class="form-control" id="FormPsw">
+            </div>
+            <div class="mb-2 col-12 col-lg-6">
+                <label for="FormAdEmail" class="form-label">Indirizzo Email</label>
+                <div class="input-group">
+                    <span class="input-group-text" id="basic-addon1">@</span>
+                    <input type="email" class="form-control" id="FormAdEmail">
+                </div>
+            </div>
+            <div class="mb-2 col-12 col-lg-6">
+                <label for="FormPassword" class="form-label">Password</label>
+                <input type="password" class="form-control" id="FormPassword">
+            </div>
+            <div class="mb-2 col-12">
+                <label for="Address" class="form-label">Indirizzo</label>
+                <input type="text" class="form-control" id="Address">
+            </div>
+            <div class="mb-2 col-12 col-lg-6">
+                <label for="City" class="form-label">Città</label>
+                <input type="text" class="form-control" id="City">
+            </div>
+            <div class="mb-2 col-12 col-lg-4">
+                <label for="FormState" class="form-label">Stato</label>
+                <div class="dropdown">
+                    <button class="btn border rounded w-100 text-start dropdown-toggle dropdown-toggle-split" type="button"
+                        data-bs-toggle="dropdown" id="FormState">
+                        Scegli...
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-dark overflow-scroll menuHScroll dropdown-center">
+                        <li><a class="dropdown-item active" href="#">Italia</a></li>
+                        <li>
+                            <hr class="dropdown-divider my-1">
+                        </li>
+                        <li><a class="dropdown-item" href="#">Albania</a></li>
+                        <li><a class="dropdown-item" href="#">Andorra</a></li>
+                        <li><a class="dropdown-item" href="#">Armenia</a></li>
+                        <li><a class="dropdown-item" href="#">Austria</a></li>
+                        <li><a class="dropdown-item" href="#">Azerbaijan</a></li>
+                        <li><a class="dropdown-item" href="#">Bosnia-Erzegovina</a></li>
+                        <li><a class="dropdown-item" href="#">Belgio</a></li>
+                        <li><a class="dropdown-item" href="#">Bulgaria</a></li>
+                        <li><a class="dropdown-item" href="#">Croazia</a></li>
+                        <li><a class="dropdown-item" href="#">Cipro</a></li>
+                        <li><a class="dropdown-item" href="#">Danimarca</a></li>
+                        <li><a class="dropdown-item" href="#">Estonia</a></li>
+                        <li><a class="dropdown-item" href="#">Finlandia</a></li>
+                        <li><a class="dropdown-item" href="#">Francia</a></li>
+                        <li><a class="dropdown-item" href="#">Georgia</a></li>
+                        <li><a class="dropdown-item" href="#">Germania</a></li>
+                        <li><a class="dropdown-item" href="#">Grecia</a></li>
+                        <li><a class="dropdown-item" href="#">Islanda</a></li>
+                        <li><a class="dropdown-item" href="#">Irlanda</a></li>
+                        <li><a class="dropdown-item" href="#">Lettonia</a></li>
+                        <li><a class="dropdown-item" href="#">Liechtenstein</a></li>
+                        <li><a class="dropdown-item" href="#">Lituania</a></li>
+                        <li><a class="dropdown-item" href="#">Lussemburgo</a></li>
+                        <li><a class="dropdown-item" href="#">Malta</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mb-2 col-12 col-lg-2">
+                <label for="FormCAP" class="form-label">CAP</label>
+                <input type="number" class="form-control" id="FormCAP">
+            </div>
+            <div class="mb-2 col-12">
+                <label for="FormUpload" class="form-label">Foto</label>
+                <div class="input-group">
+                    <input type="file" class="form-control w-100" id="FormUpload">
+                </div>
+            </div>
+            <div class="mb-2 form-check col-12 py-2">
+                <input class="form-check-input ms-0" type="checkbox" value="" id="OCcheck" required>
+                <label class="form-check-label ps-2" for="OCcheck">
+                    Seleziona per proseguire
+                </label>
+            </div>
+            <div class="mb-2 d-grid gap-2 d-md-block col-12 py-2">
+                <button class="btn btn-primary" type="button">Salva</button>
+                <button class="btn btn-warning" type="button">Svuota</button>
+            </div>
+        </div>
+    </div>
+    <!-- ************** FINE OFFCANVAS SECTION ************** -->
 </body>
 
 </html>
