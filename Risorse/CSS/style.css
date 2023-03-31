@@ -60,6 +60,14 @@ main {
     background-color: #1A72E8;
 }
 
+.bgDarkBlue {
+    background-color: #165bba;
+}
+
+#infoSec small {
+    font-size: smaller;
+}
+
 #mainBoxesSec table td {
     font-size: smaller;
 }
