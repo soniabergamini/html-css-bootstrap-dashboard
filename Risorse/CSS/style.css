@@ -42,6 +42,16 @@ aside .nav-link:hover {
 }
 
 /* Main Style */
+main {
+    width: calc(100vw - 4.375rem);
+}
+
+@media screen and (min-width: 992px) {
+    main {
+        width: calc(100vw - 9.375rem);
+    }
+}
+
 #infoSec {
     background-color: #1A72E8;
 }
