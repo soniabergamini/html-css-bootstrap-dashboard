@@ -373,7 +373,35 @@
                             <div id="graphSec" class="mb-3">
                                 <div class="border rounded p-3 bg-white">
                                     <div class="card">
-                                        <img src="./Risorse/img/stats.jpeg" class="card-img-top img-fluid" alt="graph-img">
+                                        <!-- Graph Image -->
+                                        <!-- <img src="./Risorse/img/stats.jpeg" class="card-img-top img-fluid" alt="graph-img"> -->
+                                        <!-- ************** START OF GRAPH JS ************** -->
+                                        <div class="h-100">
+                                            <canvas id="GraphJS"></canvas>
+                                        </div>
+                                        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+                                        <script>
+                                            const ctx = document.getElementById('GraphJS');
+                                            new Chart(ctx, {
+                                                type: 'bar',
+                                                data: {
+                                                    labels: ['Never', 'Every few hours', 'Every hour', 'Multiple times per hour', 'Constantly'],
+                                                    datasets: [{
+                                                        label: '% of Votes',
+                                                        data: [18, 49, 11, 13, 9],
+                                                        borderWidth: 1
+                                                    }]
+                                                },
+                                                options: {
+                                                    scales: {
+                                                        y: {
+                                                            beginAtZero: true
+                                                        }
+                                                    }
+                                                }
+                                            });
+                                        </script>
+                                        <!-- ************** END OF GRAPH JS ************** -->
                                         <div class="card-body">
                                             <h5 class="card-title">Studenti attivi</h5>
                                             <p class="card-text">Lista degli utenti attivi in piattaforma nell'ultimo mese</p>
@@ -395,7 +423,7 @@
             </section>
         </main>
     </div>
-    <!-- ************** INIZIO OFFCANVAS SECTION ************** -->
+    <!-- ************** START OFFCANVAS SECTION ************** -->
     <div class="offcanvas offcanvas-end text-start wResponsive w-100 overflow-scroll" data-bs-backdrop="static" tabindex="-1"
         id="OCAddStudent" aria-labelledby="OCAddStudentLabel">
         <div class="offcanvas-header text-dark">
@@ -502,7 +530,7 @@
             </div>
         </div>
     </div>
-    <!-- ************** FINE OFFCANVAS SECTION ************** -->
+    <!-- ************** END OFFCANVAS SECTION ************** -->
 </body>
 
 </html>
