@@ -430,46 +430,77 @@
             <h5 class="offcanvas-title" id="OCAddStudentLabel">Inserisci un nuovo studente</h5>
             <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
-        <div class="offcanvas-body flex-grow-0 text-dark row py-0">
+        <form action="#" class="offcanvas-body flex-grow-0 text-dark row py-0">
             <div class="mb-2 col-12 col-lg-6">
                 <label for="FormName" class="form-label">Nome</label>
-                <input type="text" class="form-control" id="FormName">
+                <input type="text" class="form-control" id="FormName" required>
             </div>
             <div class="mb-2 col-12 col-lg-6">
                 <label for="FormSurname" class="form-label">Cognome</label>
-                <input type="text" class="form-control" id="FormSurname">
+                <input type="text" class="form-control" id="FormSurname" required>
             </div>
             <div class="mb-2 col-12 col-lg-6">
                 <label for="FormEmail" class="form-label">Email</label>
                 <div class="input-group">
                     <span class="input-group-text" id="basic-addon1">@</span>
-                    <input type="email" class="form-control" id="FormEmail">
+                    <input type="email" class="form-control" id="FormEmail" required>
                 </div>
             </div>
             <div class="mb-2 col-12 col-lg-6">
                 <label for="FormPsw" class="form-label">Password</label>
-                <input type="password" class="form-control" id="FormPsw">
+                <input type="password" class="form-control" id="FormPsw" required>
             </div>
             <div class="mb-2 col-12 col-lg-6">
                 <label for="FormAdEmail" class="form-label">Indirizzo Email</label>
                 <div class="input-group">
                     <span class="input-group-text" id="basic-addon1">@</span>
-                    <input type="email" class="form-control" id="FormAdEmail">
+                    <input type="email" class="form-control" id="FormAdEmail" required>
                 </div>
             </div>
             <div class="mb-2 col-12 col-lg-6">
                 <label for="FormPassword" class="form-label">Password</label>
-                <input type="password" class="form-control" id="FormPassword">
+                <input type="password" class="form-control" id="FormPassword" required>
             </div>
             <div class="mb-2 col-12">
                 <label for="Address" class="form-label">Indirizzo</label>
-                <input type="text" class="form-control" id="Address">
+                <input type="text" class="form-control" id="Address" required>
             </div>
             <div class="mb-2 col-12 col-lg-6">
                 <label for="City" class="form-label">Città</label>
-                <input type="text" class="form-control" id="City">
+                <input type="text" class="form-control" id="City" required>
             </div>
             <div class="mb-2 col-12 col-lg-4">
+                <label for="FormState" class="form-label">Stato</label>
+                <select name="Stato" id="FormState" class="form-select form-select-md">
+                    <option selected>Scegli... <i class="fa-solid fa-chevron-down fa-xs"></i></option>
+                    <option value="Italia">Italia</option>
+                    <option value="Albania">Albania</option>
+                    <option value="Andorra">Andorra</option>
+                    <option value="Armenia">Armenia</option>
+                    <option value="Austria">Austria</option>
+                    <option value="Azerbaijan">Azerbaijan</option>
+                    <option value="Bosnia-Erzegovina">Bosnia-Erzegovina</option>
+                    <option value="Belgio">Belgio</option>
+                    <option value="Bulgaria">Bulgaria</option>
+                    <option value="Croazia">Croazia</option>
+                    <option value="Cipro">Cipro</option>
+                    <option value="Danimarca">Danimarca</option>
+                    <option value="Estonia">Estonia</option>
+                    <option value="Finlandia">Finlandia</option>
+                    <option value="Francia">Francia</option>
+                    <option value="Georgia">Georgia</option>
+                    <option value="Germania">Germania</option>
+                    <option value="Grecia">Grecia</option>
+                    <option value="Islanda">Islanda</option>
+                    <option value="Irlanda">Irlanda</option>
+                    <option value="Lettonia">Lettonia</option>
+                    <option value="Liechtenstein">Liechtenstein</option>
+                    <option value="Lituania">Lituania</option>
+                    <option value="Lussemburgo">Lussemburgo</option>
+                    <option value="Malta">Malta</option>
+                </select>
+            </div>
+            <!-- <div class="mb-2 col-12 col-lg-4">
                 <label for="FormState" class="form-label">Stato</label>
                 <div class="dropdown">
                     <button class="btn border rounded w-100 text-start dropdown-toggle dropdown-toggle-split" type="button"
@@ -507,15 +538,15 @@
                         <li><a class="dropdown-item" href="#">Malta</a></li>
                     </ul>
                 </div>
-            </div>
+            </div> -->
             <div class="mb-2 col-12 col-lg-2">
                 <label for="FormCAP" class="form-label">CAP</label>
-                <input type="number" class="form-control" id="FormCAP">
+                <input type="number" class="form-control" id="FormCAP" required>
             </div>
             <div class="mb-2 col-12">
                 <label for="FormUpload" class="form-label">Foto</label>
                 <div class="input-group">
-                    <input type="file" class="form-control w-100" id="FormUpload">
+                    <input type="file" class="form-control w-100" id="FormUpload" required>
                 </div>
             </div>
             <div class="mb-2 form-check col-12 py-2">
@@ -525,10 +556,10 @@
                 </label>
             </div>
             <div class="mb-2 d-grid gap-2 d-md-block col-12 py-2">
-                <button class="btn btn-primary" type="button">Salva</button>
-                <button class="btn btn-warning" type="button">Svuota</button>
+                <button class="btn btn-primary" type="submit" value="submit">Salva</button>
+                <button class="btn btn-warning" type="reset" value="reset">Svuota</button>
             </div>
-        </div>
+        </form>
     </div>
     <!-- ************** END OFFCANVAS SECTION ************** -->
 </body>
